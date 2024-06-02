@@ -9,7 +9,7 @@ export default function App() {
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
       <View style={styles.row}>
         <View style={{ flexDirection: 'column' }}>
-          <Text style={{ fontSize: 36 }}>Hello, Theoford!</Text>
+          <Text style={{ fontSize: 36 }}>Hello, David</Text>
           <Text>14 tasks today</Text>
         </View>
         <Image source={require('./assets/person.png')} style={{ width: 40, height: 40, backgroundColor: 'white', borderRadius: 100 }} />
@@ -33,48 +33,48 @@ export default function App() {
 
         <View style={styles.generalContent}>
 
-          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <ScrollView>
 
             <View style={{ flexDirection: 'row', paddingTop: 15 }}>
 
-              <View style={styles.card} backgroundColor="white">
+              <View style={styles.card}>
                 <Text style={{ fontSize: 21 }}>Exercise</Text>
                 <Text>7 tasks</Text>
                 <Image source={require('./assets/young woman working online.png')} style={{ padding: 10, marginHorizontal: 20 }} />
               </View>
 
-              <View style={styles.card} backgroundColor="white">
-                <Text style={{ fontSize: 21 }}>Research</Text>
+              <View style={styles.card} >
+                <Text style={{ fontSize: 21 }}>Study</Text>
                 <Text>10 tasks</Text>
                 <Image source={require('./assets/young woman working at desk.png')} style={{ padding: 10, marginHorizontal: 20 }} />
               </View>
 
-              <View style={styles.card} backgroundColor="white">
+              <View style={styles.card} >
                 <Text style={{ fontSize: 21 }}>Entertainment</Text>
                 <Text>8 tasks</Text>
                 <Image source={require('./assets/image copy 9.png')} style={{ padding: 5, marginHorizontal: 5 }} />
               </View>
 
-              <View style={styles.card} backgroundColor="white">
+              <View style={styles.card} >
                 <Text style={{ fontSize: 21 }}>Art</Text>
                 <Text>5 tasks</Text>
                 <Image source={require('./assets/image copy 10.png')} style={{ padding: 10, marginHorizontal: 20 }} />
               </View>
 
-              <View style={styles.card} backgroundColor="white">
+              <View style={styles.card} >
                 <Text style={{ fontSize: 21 }}>Work</Text>
                 <Text>15 tasks</Text>
                 <Image source={require('./assets/image copy 7.png')} style={{ padding: 5, marginHorizontal: 50 }} />
               </View>
 
-              <View style={styles.card} backgroundColor="white">
-                <Text style={{ fontSize: 21 }}>Virtual Reality</Text>
+              <View style={styles.card}>
+                <Text style={{ fontSize: 21 }}>Dance</Text>
                 <Text>3 tasks</Text>
                 <Image source={require('./assets/image copy 13.png')} style={{ padding: 10, marginHorizontal: 20 }} />
               </View>
 
-              <View style={styles.card} backgroundColor="white">
-                <Text style={{ fontSize: 21 }}>Product testing</Text>
+              <View style={styles.card} >
+                <Text style={{ fontSize: 21 }}>Testing</Text>
                 <Text>6 tasks</Text>
                 <Image source={require('./assets/image copy 12.png')} style={{ padding: 50, marginHorizontal: 20 }} />
               </View>
@@ -90,7 +90,7 @@ export default function App() {
         <View style={{ flexDirection: 'column', paddingTop: 10 }}>
 
           <View style={styles.task} backgroundColor='white'>
-            <Text style={{ fontSize: 20, }}>Update school administration system</Text>
+            <Text style={{ fontSize: 20, }}>Watching TV</Text>
           </View>
 
           <View style={styles.task} >
@@ -102,23 +102,23 @@ export default function App() {
           </View>
 
           <View style={styles.task} backgroundColor='white'>
-            <Text style={{ fontSize: 20, }}>Make collage art</Text>
+            <Text style={{ fontSize: 20, }}>Painting</Text>
           </View>
 
           <View style={styles.task} >
-            <Text style={{ fontSize: 20, }}>Watching 365 Days</Text>
+            <Text style={{ fontSize: 20, }}>TV watching</Text>
           </View>
 
           <View style={styles.task} backgroundColor='white'>
-            <Text style={{ fontSize: 20, }}>Doing yoga</Text>
+            <Text style={{ fontSize: 20, }}>Pull ups/Text>
           </View>
 
           <View style={styles.task} backgroundColor='white'>
-            <Text style={{ fontSize: 20, }}>Learning about AI</Text>
+            <Text style={{ fontSize: 20, }}>Cooking</Text>
           </View>
 
           <View style={styles.task} >
-            <Text style={{ fontSize: 20, }}>Testing new food delivery app</Text>
+            <Text style={{ fontSize: 20, }}>Testing delivery app</Text>
           </View>
 
           <View style={styles.task} backgroundColor='white'>
@@ -126,15 +126,15 @@ export default function App() {
           </View>
 
           <View style={styles.task} backgroundColor='white'>
-            <Text style={{ fontSize: 20, }}>Watching football</Text>
+            <Text style={{ fontSize: 20, }}>Dancing</Text>
           </View>
 
           <View style={styles.task} >
-            <Text style={{ fontSize: 20, }}>Machine learning</Text>
+            <Text style={{ fontSize: 20, }}>Software development</Text>
           </View>
 
           <View style={styles.task} backgroundColor='white'>
-            <Text style={{ fontSize: 20, }}>Researching the side effects of AI</Text>
+            <Text style={{ fontSize: 20, }}>AI dev</Text>
           </View>
 
 
@@ -148,9 +148,6 @@ export default function App() {
     </ScrollView >
   );
 };
-
-const screenWidth = Dimensions.get('window').width;
-
 
 const styles = StyleSheet.create({
   container: {
@@ -222,6 +219,9 @@ const styles = StyleSheet.create({
     width: 100,
   }
 },
+  card:{
+    backgroundColor: 'white',
+  }
 
 
 
